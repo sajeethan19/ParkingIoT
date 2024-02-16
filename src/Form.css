@@ -1,0 +1,110 @@
+
+
+   
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* overflow-y: auto;  */
+}
+
+.container {
+    margin: auto;
+    background: #ffff;
+}
+
+.card{
+    height: 90vw; /* Using vw for height */
+    width: 90vw; /* Using vw for width */
+    max-width: 720px; /* Limiting max-width */
+    background-color:#fff;
+    font-family: 'Rubik', sans-serif;
+    position:absolute;
+    transition:all 0.5s;
+    overflow:hidden; 
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw; /* Using vw for gap */
+    width: 100%;
+}
+
+.text{
+    color: #ffffff;
+    font-weight: 700;
+    font-size:xx-large;
+}
+
+.underline{
+    width: 6vw; /* Using vw for width */
+    height: 0.6vw; /* Using vw for height */
+    background: #ffffff;
+    border-radius: 0.9vw; /* Using vw for border-radius */
+}
+
+body {
+    margin: 0;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    min-height: 100vh;
+    background: linear-gradient(rgb(49, 0, 80), #230436,#000000);
+}
+
+
+.input img{
+    margin: 0 3vw; /* Using vw for margin */
+}
+
+.forgot-password{
+    padding-left: 6.2vw; /* Using vw for padding */
+    margin-top: 1vw; /* Using vw for margin */
+    color: #797979;
+    font-size: 1.8vw; /* Using vw for font-size */
+}
+
+.forgot-password span{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.User{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5vw; /* Using vw for border-radius */
+    font-size: 1.9vw; /* Using vw for font-size */
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-container-select{
+    display: flex;
+    gap: 1vw; /* Using vw for gap */
+    margin: 5vw auto 2vw auto; /* Using vw for margin */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.submit{
+    display: flex;
+    color: #fff;
+    background: #1a7dab;
+    border-radius: 20px; 
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: xx-large;
+}
+
+
+.gray{
+    background: #EAEAEA;
+    color: #676767;
+}
+
+
+
