@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App.tsx';
 import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import * as Popper from "@popperjs/core"
+// import * as Popper from "@popperjs/core"
 
 ReactDOM.render(
 

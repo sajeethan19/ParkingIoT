@@ -15,14 +15,14 @@ const Form: React.FC = () => {
     const [passwordInputClass, setPasswordInputClass] = useState("");
     const [PasswordAlertClass,setPasswordAlertClass] = useState(true)
 
-    const handleSubmit = (e: { preventDefault: () => void; }) =>{
+    const handleSubmit = () =>{
       axios.post('http://localhost:5174/Users',{name,username,password})
       .then(result => console.log(result))
       .catch(err => console.log(err))
       navigate('/form')
     
     }
-    const HandleLogin = (e: { preventDefault: () => void; }) =>{
+    const HandleLogin = () =>{
       // console.log(username,password)
       axios.post('http://localhost:5174/login',{username,password})
       .then(result => {

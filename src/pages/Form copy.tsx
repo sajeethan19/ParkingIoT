@@ -3,7 +3,6 @@ import "../Form.css";
 import Navbar from "../components/Navbar";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-import * as yup from 'yup';
 
 const Form: React.FC = () => {
   const [action, setAction] = useState("Login");
@@ -14,14 +13,14 @@ const Form: React.FC = () => {
     const [password, setPassword] = useState<string | undefined>(undefined);
     const navigate = useNavigate()
 
-    const handleSubmit = (e: { preventDefault: () => void; }) =>{
+    const handleSubmit = () =>{
       axios.post('http://localhost:5174/Users',{name,username,password})
       .then(result => console.log(result))
       .catch(err => console.log(err))
       navigate('/form')
     
     }
-    const HandleLogin = (e: { preventDefault: () => void; }) =>{
+    const HandleLogin = () =>{
       // console.log(username,password)
       axios.post('http://localhost:5174/login',{username,password})
       .then(result => {
